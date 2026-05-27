@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #b9ecf7;
+    background: #1e1e2f;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,10 +17,10 @@ body {
 .main-container {
     width: 95%;
     max-width: 1400px;
-    background: white;
+    background: #2b2b40;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 10px 10px 0px #87d8ea;
+    box-shadow: 10px 10px 0px #121220;
 }
 
 /* Navbar */
@@ -35,7 +35,7 @@ body {
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #184b8a;
+    color: #ffcc70;
 }
 
 .logo i {
@@ -48,6 +48,7 @@ body {
     list-style: none;
     font-size: 20px;
     font-weight: bold;
+    color: #f1f1f1;
 }
 
 .nav-links li {
@@ -55,7 +56,7 @@ body {
 }
 
 .signup-btn {
-    background: #1565c0;
+    background: #ff8c42;
     color: white;
     border: none;
     padding: 15px 35px;
@@ -79,19 +80,19 @@ body {
 
 .left-section h1 {
     font-size: 70px;
-    color: #184b8a;
+    color: #ffcc70;
     margin-bottom: 25px;
 }
 
 .left-section p {
     font-size: 24px;
-    color: gray;
+    color: #d3d3d3;
     line-height: 1.7;
     margin-bottom: 30px;
 }
 
 .start-btn {
-    background: #1565c0;
+    background: #6c63ff;
     color: white;
     border: none;
     padding: 18px 40px;
@@ -113,7 +114,7 @@ body {
 /* Task Section */
 
 .task-section {
-    background: #f5f7fb;
+    background: #3a3a55;
     padding: 30px;
     border-radius: 20px;
 }
@@ -127,7 +128,7 @@ body {
 
 .task-header h2 {
     font-size: 35px;
-    color: #184b8a;
+    color: #ffcc70;
 }
 
 .task-input-box {
@@ -139,12 +140,18 @@ body {
     padding: 15px;
     width: 300px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
+    background: #2b2b40;
+    color: white;
     font-size: 18px;
 }
 
+.task-input-box input::placeholder {
+    color: #bbb;
+}
+
 .task-input-box button {
-    background: #1565c0;
+    background: #00b894;
     color: white;
     border: none;
     padding: 15px 25px;
@@ -160,18 +167,19 @@ body {
 }
 
 #taskList li {
-    background: white;
+    background: #2b2b40;
     margin-bottom: 15px;
     padding: 20px;
     border-radius: 12px;
     font-size: 20px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #taskList button {
-    background: red;
+    background: #e63946;
     color: white;
     border: none;
     padding: 10px 18px;
