@@ -1,4 +1,4 @@
-# End-to-End DevOps Pipeline for Node.js Web Application
+# End-to-End DevOps Pipeline Automation for a Containerized Node.js Web Application on AWS
 
 ## 1. Project Description
 
