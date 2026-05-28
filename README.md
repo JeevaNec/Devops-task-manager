@@ -118,24 +118,24 @@ The Jenkins Freestyle Project is configured to:
 
  1. Prometheus
 
-  Prometheus collects infrastructure and system metrics from the EC2 instance.
+      Prometheus collects infrastructure and system metrics from the EC2 instance.
 
 
  2. Grafana
 
-  Grafana visualizes monitoring metrics using interactive dashboards.
+      Grafana visualizes monitoring metrics using interactive dashboards.
 
 
  3. AWS CloudWatch
 
-  CloudWatch monitors AWS EC2 resource usage and instance health.
+      CloudWatch monitors AWS EC2 resource usage and instance health.
 
 
 ## 9. Cron Job Automation
 
 Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system maintenance tasks such as backup creation and log cleanup. This reduced manual administrative effort and improved server maintenance efficiency.
 
-  View Existing Cron Jobs
+ 1. View Existing Cron Jobs
 
      crontab -l
 
@@ -145,13 +145,13 @@ Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system mainte
 
      crontab -e
 
-  Automated Backup Cron Job
+ 2. Automated Backup Cron Job
 
   The following cron job automatically creates project backups every day at 12:00 AM.
 
      0 0 * * * /home/ubuntu/automation/backup.sh
 
-   Automated Log Cleanup Cron Job
+  3.Automated Log Cleanup Cron Job
 
    The following cron job automatically deletes old log files every day at 1:00 AM.
 
