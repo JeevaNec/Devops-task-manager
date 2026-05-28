@@ -1,6 +1,6 @@
 # End-to-End DevOps Pipeline for Node.js Web Application
 
-# 1.Project Overview
+##1.Project Overview
 
 This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies.
 
@@ -8,7 +8,7 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 
 
 
-# 2 Technologies Used
+## 2 Technologies Used
 
 * Node.js
 * HTML
@@ -26,12 +26,12 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 * Cron Jobs
 
 
-# 3. DevOps Workflow
+## 3. DevOps Workflow
 
   Developer → GitHub → Jenkins → Docker → Docker Hub → AWS EC2 → Monitoring Tools
 
 
-# 4. Features
+## 4. Features
 
 * CI/CD automation using Jenkins
 * GitHub webhook integration
@@ -42,7 +42,7 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 * AWS CloudWatch monitoring
 * Automated backup and log cleanup using shell scripts and cron jobs
 
-# 5. Project Structure
+## 5. Project Structure
 
 Devops-task-manager/
 │
@@ -68,7 +68,7 @@ Devops-task-manager/
 ├── app.js
 └── README.md
 
-# 6. Setup Instructions
+## 6. Setup Instructions
 
  1. Clone the Repository
 
@@ -103,7 +103,7 @@ Devops-task-manager/
 
         docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
  
-7. Jenkins Automation
+## 7. Jenkins Automation
 
 The Jenkins Freestyle Project is configured to:
 
@@ -114,7 +114,7 @@ The Jenkins Freestyle Project is configured to:
 * Deploy Docker container on AWS EC2
 
 
-# 8. Monitoring Setup
+## 8. Monitoring Setup
 
  1. Prometheus
 
@@ -131,7 +131,7 @@ The Jenkins Freestyle Project is configured to:
   CloudWatch monitors AWS EC2 resource usage and instance health.
 
 
-# Cron Job Automation
+## 9. Cron Job Automation
 
 Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system maintenance tasks such as backup creation and log cleanup. This reduced manual administrative effort and improved server maintenance efficiency.
 
@@ -167,7 +167,7 @@ Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system mainte
     ./cleanup.sh
 
 
-# Purpose of Automation
+#310. Purpose of Automation
 
 * Automatic backup management
 * Automatic log cleanup
