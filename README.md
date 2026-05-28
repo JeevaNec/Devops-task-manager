@@ -1,29 +1,26 @@
 # End-to-End DevOps Pipeline for Node.js Web Application
 
-## 1.Project Overview
+## 1 Project Description
 
-This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies.
+  This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies. The project automates source code management, continuous integration, deployment, monitoring, and maintenance operations.
 
-The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, CloudWatch, Shell Scripting, and Cron Jobs into a single automated deployment and monitoring workflow.
+  The application source code is managed using GitHub, automated using Jenkins CI/CD, containerized using Docker, deployed on AWS EC2, and monitored using Prometheus, Grafana, and AWS CloudWatch. Shell scripts and Cron Jobs are additionally used for automation tasks such as backups and log cleanup.
 
 
-
-## 2 Technologies Used
-
-* Node.js
-* HTML
-* CSS
-* JavaScript
-* Git & GitHub
-* Jenkins
-* Docker
-* Docker Hub
-* AWS EC2 (Ubuntu)
-* Prometheus
-* Grafana
-* AWS CloudWatch
-* Shell Scripting
-* Cron Jobs
+##  2 Tech Stack
+   Technology	               Purpose
+    Node.js	              - Backend Development
+    HTML, CSS, JavaScript - Frontend Development
+    Git & GitHub	        - Version Control
+    Jenkins	              - CI/CD Automation
+    Docker                - Containerization
+    Docker Hub	          - Docker Image Repository
+    AWS EC2 Ubuntu	      - Cloud Hosting
+    Prometheus            -	Monitoring
+    Grafana               -	Monitoring Dashboard
+    AWS CloudWatch	      - Infrastructure Monitoring
+    Shell Scripting       -	Automation
+    Cron Jobs           	- Scheduled Tasks
 
 
 ## 3. DevOps Workflow
@@ -103,16 +100,11 @@ Devops-task-manager/
 
         docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
  
-## 7. Jenkins Automation
+## 7. CI/CD Flow
 
-The Jenkins Freestyle Project is configured to:
+   Developer pushes source code changes to the GitHub repository. GitHub Webhooks automatically trigger the Jenkins Freestyle CI/CD pipeline whenever new code changes are detected.
 
-* Pull source code from GitHub
-* Automatically trigger builds using GitHub Webhooks
-* Build Docker image
-* Push image to Docker Hub
-* Deploy Docker container on AWS EC2
-
+  Jenkins pulls the latest source code, installs dependencies, builds the Docker image, and pushes the image to Docker Hub. The Docker container is then deployed on the AWS EC2 Ubuntu server. Monitoring tools such as Prometheus, Grafana, and AWS CloudWatch continuously monitor infrastructure health and system performance.
 
 ## 8. Monitoring Setup
 
