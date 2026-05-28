@@ -1,6 +1,6 @@
 # End-to-End DevOps Pipeline for Node.js Web Application
 
-##1.Project Overview
+## 1.Project Overview
 
 This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies.
 
@@ -167,7 +167,7 @@ Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system mainte
     ./cleanup.sh
 
 
-#310. Purpose of Automation
+## 10. Purpose of Automation
 
 * Automatic backup management
 * Automatic log cleanup
