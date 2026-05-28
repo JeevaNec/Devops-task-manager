@@ -31,7 +31,6 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
   Developer → GitHub → Jenkins → Docker → Docker Hub → AWS EC2 → Monitoring Tools
 
 
-
 4. Features
 
 * CI/CD automation using Jenkins
@@ -42,7 +41,6 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 * Infrastructure monitoring using Prometheus & Grafana
 * AWS CloudWatch monitoring
 * Automated backup and log cleanup using shell scripts and cron jobs
-
 
 5. Project Structure
 
@@ -72,38 +70,38 @@ Devops-task-manager/
 
 6. Setup Instructions
 
-## 1. Clone the Repository
+ 1. Clone the Repository
 
-  git clone https://github.com/JeevaNec/Devops-task-manager.git
+    git clone https://github.com/JeevaNec/Devops-task-manager.git
  
 
-## 2. Navigate to Project Directory
+ 2. Navigate to Project Directory
 
-  cd Devops-task-manager
-
-
-## 3. Install Dependencies
-
-  npm install
+    cd Devops-task-manager
 
 
-## 4. Run the Application
+ 3. Install Dependencies
 
-  node app.js
+    npm install
 
 
-## 5. Access the Application
+ 4. Run the Application
 
-Open browser and visit:
-http://ip:3000
+    node app.js
 
-## Build Docker Image
 
-  docker build -t devops-task-manager .
+ 5. Access the Application
 
-## Run Docker Container
+   Open browser and visit:
+     http://ip:3000
 
-  docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
+   Build Docker Image
+
+   docker build -t devops-task-manager .
+ 
+   Run Docker Container
+
+    docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
 
 7. Jenkins Automation
 
