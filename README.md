@@ -1,13 +1,13 @@
 # End-to-End DevOps Pipeline for Node.js Web Application
 
-## 1 Project Description
+## 1. Project Description
 
   This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies. The project automates source code management, continuous integration, deployment, monitoring, and maintenance operations.
 
   The application source code is managed using GitHub, automated using Jenkins CI/CD, containerized using Docker, deployed on AWS EC2, and monitored using Prometheus, Grafana, and AWS CloudWatch. Shell scripts and Cron Jobs are additionally used for automation tasks such as backups and log cleanup.
 
 
-##  2 Tech Stack
+##  2. Tech Stack
    Technology	               Purpose
     Node.js	              - Backend Development
     HTML, CSS, JavaScript - Frontend Development
