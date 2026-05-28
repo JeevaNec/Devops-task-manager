@@ -1,6 +1,6 @@
- End-to-End DevOps Pipeline for Node.js Web Application
+## End-to-End DevOps Pipeline for Node.js Web Application
 
-1.Project Overview
+# 1.Project Overview
 
 This project demonstrates a complete End-to-End DevOps CI/CD Pipeline for a Node.js Task Management Web Application using modern DevOps tools and cloud technologies.
 
@@ -8,7 +8,7 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 
 
 
-2 Technologies Used
+# 2 Technologies Used
 
 * Node.js
 * HTML
@@ -26,12 +26,12 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 * Cron Jobs
 
 
-3. DevOps Workflow
+# 3. DevOps Workflow
 
   Developer → GitHub → Jenkins → Docker → Docker Hub → AWS EC2 → Monitoring Tools
 
 
-4. Features
+# 4. Features
 
 * CI/CD automation using Jenkins
 * GitHub webhook integration
@@ -42,7 +42,7 @@ The project integrates GitHub, Jenkins, Docker, AWS EC2, Prometheus, Grafana, Cl
 * AWS CloudWatch monitoring
 * Automated backup and log cleanup using shell scripts and cron jobs
 
-5. Project Structure
+# 5. Project Structure
 
 Devops-task-manager/
 │
@@ -68,7 +68,7 @@ Devops-task-manager/
 ├── app.js
 └── README.md
 
-6. Setup Instructions
+# 6. Setup Instructions
 
  1. Clone the Repository
 
@@ -92,17 +92,17 @@ Devops-task-manager/
 
  5. Access the Application
 
-   Open browser and visit:
+     Open browser and visit:
      http://ip:3000
 
-   Build Docker Image
+     Build Docker Image
 
-   docker build -t devops-task-manager .
+        docker build -t devops-task-manager .
  
-   Run Docker Container
+     Run Docker Container
 
-    docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
-
+        docker run -d -p 3000:3000 --name devops-task-manager devops-task-manager
+ 
 7. Jenkins Automation
 
 The Jenkins Freestyle Project is configured to:
@@ -114,35 +114,66 @@ The Jenkins Freestyle Project is configured to:
 * Deploy Docker container on AWS EC2
 
 
-8. Monitoring Setup
+# 8. Monitoring Setup
 
-## Prometheus
+ 1. Prometheus
 
   Prometheus collects infrastructure and system metrics from the EC2 instance.
 
 
-## Grafana
+ 2. Grafana
 
   Grafana visualizes monitoring metrics using interactive dashboards.
 
 
-## AWS CloudWatch
+ 3. AWS CloudWatch
 
   CloudWatch monitors AWS EC2 resource usage and instance health.
 
 
-9. Automation Scripts
+# Cron Job Automation
 
-## Backup Script
+Cron Jobs were configured in the AWS EC2 Ubuntu server to automate system maintenance tasks such as backup creation and log cleanup. This reduced manual administrative effort and improved server maintenance efficiency.
 
-  Automates project backup creation.
+  View Existing Cron Jobs
 
-./backup.sh
+     crontab -l
 
-## Cleanup Script
 
-  Deletes old log files automatically.
+  Edit Cron Jobs
 
-./cleanup.sh
+
+     crontab -e
+
+  Automated Backup Cron Job
+
+  The following cron job automatically creates project backups every day at 12:00 AM.
+
+     0 0 * * * /home/ubuntu/automation/backup.sh
+
+   Automated Log Cleanup Cron Job
+
+   The following cron job automatically deletes old log files every day at 1:00 AM.
+
+    0 1 * * * /home/ubuntu/automation/cleanup.sh
+
+   Backup Script Execution
+
+
+    ./backup.sh
+
+   Cleanup Script Execution
+
+    ./cleanup.sh
+
+
+# Purpose of Automation
+
+* Automatic backup management
+* Automatic log cleanup
+* Reduced manual maintenance
+* Improved server performance
+* Better storage management
+* Reliable infrastructure operations
 
 
